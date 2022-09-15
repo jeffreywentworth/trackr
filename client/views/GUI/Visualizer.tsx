@@ -1,7 +1,6 @@
 import './styles.scss';
 import { useState, useCallback } from 'react';
 import ReactFlow, {
-  addEdge,
   FitViewOptions,
   applyNodeChanges,
   applyEdgeChanges,
@@ -10,11 +9,14 @@ import ReactFlow, {
   NodeChange,
   EdgeChange,
   Connection,
+  addEdge,
 } from 'react-flow-renderer';
+
 
 const reactFlowStyle = {
   width: '100%',
   height: '100%',
+  image: `url('./assets/pngwing.com.png')`,
 };
 
 //script
@@ -76,6 +78,7 @@ const fitViewOptions: FitViewOptions = {
   padding: 0.2,
 };
 
+
 //markdown
 export default function Visualizer() {
   const [nodes, setNodes] = useState<Node[]>(initialNodes);
@@ -95,6 +98,8 @@ export default function Visualizer() {
     (connection: Connection) => setEdges((eds) => addEdge(connection, eds)),
     [setEdges]
   );
+
+
 
   return (
     <div style={{ height: '100vh', width: '100vw' }}>

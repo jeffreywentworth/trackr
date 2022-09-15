@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+body {
+  background-color: #495057;
+  font-family: 'Roboto Mono', monospace;
+  background-image: url('./assets/pngwing.com.png');
+  background-size: 100%;
+}
+
+.logindiv {
+  position: relative;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: xx-large;
+}

@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import bcrypt from 'bcryptjs';
 import { redirect, useNavigate, Link } from 'react-router-dom';
-
+import '../index.css'
 export default function LoginPage() {
     const emailInputRef = useRef<HTMLInputElement>();
     const passwordInputRef = useRef<HTMLInputElement>();
@@ -36,9 +36,14 @@ export default function LoginPage() {
     }
 
     return (
-        <>
-        <h1>Login Page</h1>
+        <div className='logindiv'>
+        <h1>WELCOME</h1>
         <Link to="/dashboard">Dashboard</Link>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <form>
             <input type="email" placeholder="email" ref={emailInputRef} style={{ padding: '15px', borderRadius: '10px', margin: '10px' }}/>
             <input type="password" placeholder="password" ref={passwordInputRef} style={{ padding: '15px', borderRadius: '10px', margin: '10px' }}/>
@@ -49,6 +54,6 @@ export default function LoginPage() {
                 Log in!
             </button>
         </form>
-        </>
+        </div>
     )
 }

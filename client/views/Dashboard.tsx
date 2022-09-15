@@ -1,4 +1,5 @@
 
+import { ReactFlowProvider } from 'react-flow-renderer';
 import UtilityMenu from './GUI/UtilityMenu';
 import Visualizer from './GUI/Visualizer';
 

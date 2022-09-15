@@ -1,9 +1,6 @@
-import React from 'react';
-// import { Routes, Route } from 'react-router-dom';
-import ReactDOM from "react-dom/client";
+import './index.css'
 import LoginPage from './views/LoginPage';
 import Dashboard from './views/Dashboard';
-import Visualizer from './views/GUI/Visualizer'
 import {
   BrowserRouter,
   createBrowserRouter,
@@ -33,7 +30,7 @@ export default function App(): JSX.Element {
   // ]);
 
   return (
-    <>
+    < div className='bg-grey'>
 
       {/* <BrowserRouter> */}
       <Routes>
@@ -45,6 +42,6 @@ export default function App(): JSX.Element {
       {/* <React.StrictMode> */}
         {/* <RouterProvider router={router} /> */}
       {/* </React.StrictMode> */}
-    </>
+    </div>
   );
 }
