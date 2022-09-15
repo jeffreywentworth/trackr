@@ -4,6 +4,13 @@ import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/slide.css';
 
 
+//button click initial state [!jobToggle, !interviewToggle, !commentsToggle]
+  // add Job = onClick()=> {jobToggle = true}
+     //render NewJob
+  // add Interview = onClick()=> {interviewToggle = true}
+    //render NewInterview
+  // add Comment = onClick()=> {commentsToggle = true}
+    //render NewComment
 
 export default function UtilityMenu() {
   return (
