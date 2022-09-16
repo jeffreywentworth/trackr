@@ -28,43 +28,43 @@ button.szh-menu-button {
 .header-title {
   display: flex;
   justify-content: center;
-}
-.react-flow__node-default {
-  padding: none;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  font-size: 5px;
-  color:white;
-  text-align: center;
-  border-width: none;
-  border-style: none;
-  background: lightgrey;
-  border-color: none;
-}
-.react-flow__node-default,
-.react-flow__node-input,
-.react-flow__node-output,
-.react-flow__node-group {
-  padding: none;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  font-size: 5px;
-  color:white;
-  text-align: center;
-  border-width: none;
-  border-style: none;
-  background: lightgrey;
+ }
+// .react-flow__node-default {
+//   padding: none;
+//   border-radius: 50%;
+//   width: 10px;
+//   height: 10px;
+//   font-size: 5px;
+//   color:white;
+//   text-align: center;
+//   border-width: none;
+//   border-style: none;
+//   background: lightgrey;
+//   border-color: none;
+// }
+// .react-flow__node-default,
+// .react-flow__node-input,
+// .react-flow__node-output,
+// .react-flow__node-group {
+//   padding: none;
+//   border-radius: 50%;
+//   width: 10px;
+//   height: 10px;
+//   font-size: 5px;
+//   color:white;
+//   text-align: center;
+//   border-width: none;
+//   border-style: none;
+//   background: lightgrey;
 
-  &.selected {
-    box-shadow: 0 0 0 0.5px #1a192b;
-  }
+//   &.selected {
+//     box-shadow: 0 0 0 0.5px #1a192b;
+//   }
 
-  .react-flow__handle {
-    background: #1a192b;
-  }
-}
+//   .react-flow__handle {
+//     background: #1a192b;
+//   }
+// }
 
 
 

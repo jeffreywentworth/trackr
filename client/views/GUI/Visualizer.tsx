@@ -12,7 +12,6 @@ import ReactFlow, {
   addEdge,
 } from 'react-flow-renderer';
 
-
 const reactFlowStyle = {
   width: '100%',
   height: '100%',
@@ -78,7 +77,6 @@ const fitViewOptions: FitViewOptions = {
   padding: 0.2,
 };
 
-
 //markdown
 export default function Visualizer() {
   const [nodes, setNodes] = useState<Node[]>(initialNodes);
@@ -98,12 +96,26 @@ export default function Visualizer() {
     (connection: Connection) => setEdges((eds) => addEdge(connection, eds)),
     [setEdges]
   );
+  let idNumber = 20;
+  let xPos = Math.ceil(Math.random() * 500);
+  let yPos = Math.ceil(Math.random() * 500);
 
-
+  const plusNode = () => {
+    let addingNode = {
+      id: `${idNumber}`,
+      data: { label: 'LOOK AT ME NEW NODE' },
+      position: { x: xPos, y: yPos },
+    };
+    const newState = [...initialNodes];
+    newState.push(addingNode);
+    setNodes(newState);
+    idNumber++;
+  };
 
   return (
     <div style={{ height: '100vh', width: '100vw' }}>
       <h1 className='header-title'>Visualizer</h1>
+      <button onClick={plusNode}>add node</button>
       <ReactFlow
         nodes={nodes}
         edges={edges}
